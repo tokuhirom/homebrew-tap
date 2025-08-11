@@ -12,7 +12,7 @@ brew tap tokuhirom/tap
 
 ### dcv
 
-Docker Container Viewer - A TUI tool for monitoring Docker containers and Docker Compose applications.
+[Docker Container Viewer](https://github.com/tokuhirom/dcv) - A TUI tool for monitoring Docker containers and Docker Compose applications.
 
 ```bash
 brew install tokuhirom/tap/dcv
