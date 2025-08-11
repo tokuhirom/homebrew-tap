@@ -18,11 +18,6 @@ Docker Container Viewer - A TUI tool for monitoring Docker containers and Docker
 brew install tokuhirom/tap/dcv
 ```
 
-Or install directly:
-
-```bash
-brew install tokuhirom/tap/dcv
-```
 
 ## Notes
 
