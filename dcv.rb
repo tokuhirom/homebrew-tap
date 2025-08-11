@@ -5,21 +5,21 @@
 class Dcv < Formula
   desc "Docker Compose Viewer - A TUI tool for monitoring Docker Compose applications"
   homepage "https://github.com/tokuhirom/dcv"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tokuhirom/dcv/releases/download/v0.0.5/dcv_darwin_amd64.tar.gz"
-      sha256 "bba4ba92eb9c313541041c3df84456a34d4dd8e63c131bd0101f60f91d927d72"
+      url "https://github.com/tokuhirom/dcv/releases/download/v0.0.6/dcv_darwin_amd64.tar.gz"
+      sha256 "912f2b4c4f652c122d631e0f5977fcd3f790d5fa8158b52e9d0de36944de35b8"
 
       def install
         bin.install "dcv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tokuhirom/dcv/releases/download/v0.0.5/dcv_darwin_arm64.tar.gz"
-      sha256 "09b646d45ad1dc6ea8c4be8d72e96a5a85cad75b0be2dd7c99e94e9b0eb8780b"
+      url "https://github.com/tokuhirom/dcv/releases/download/v0.0.6/dcv_darwin_arm64.tar.gz"
+      sha256 "a03dcda4fd46efe172016089a30f59b1197a1962d987ab46a580ddbf1e256ad0"
 
       def install
         bin.install "dcv"
@@ -29,15 +29,15 @@ class Dcv < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/dcv/releases/download/v0.0.5/dcv_linux_amd64.tar.gz"
-      sha256 "6e1cf14d5328e63549a034bced3c573ec04e53952ca92da4c39da9fbf66893ea"
+      url "https://github.com/tokuhirom/dcv/releases/download/v0.0.6/dcv_linux_amd64.tar.gz"
+      sha256 "3affa65407616695226c3c67743d84ebf7c06dc459d5350ab82ab8355d9ac6a6"
       def install
         bin.install "dcv"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/dcv/releases/download/v0.0.5/dcv_linux_arm64.tar.gz"
-      sha256 "3539422c487183a9e28511e5e802e538024fa177a02e63e8d31901dca6503dc5"
+      url "https://github.com/tokuhirom/dcv/releases/download/v0.0.6/dcv_linux_arm64.tar.gz"
+      sha256 "f1372d5fc5e5cc934c28953e650036fef25caf9ae64c32a44647f23f8ccb83d8"
       def install
         bin.install "dcv"
       end
