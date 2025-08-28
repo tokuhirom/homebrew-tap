@@ -5,21 +5,21 @@
 class Taskeru < Formula
   desc "Taskeru - task management tool"
   homepage "https://github.com/tokuhirom/taskeru"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.2/taskeru_darwin_amd64.tar.gz"
-      sha256 "689217d4664d46a4f994cdbcca2474bd7c13e322909a497e9bbdd439b6797711"
+      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.3/taskeru_darwin_amd64.tar.gz"
+      sha256 "440ea421987c74d931e26330a0b7f4c18a9f0f6d7f6e906023c4d5d87de4b4eb"
 
       def install
         bin.install "taskeru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.2/taskeru_darwin_arm64.tar.gz"
-      sha256 "4a8389963b75ed2efead6b4d7cb61672f0cfd9e1f51ee7c6cdd7888f3665283b"
+      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.3/taskeru_darwin_arm64.tar.gz"
+      sha256 "519ef49d135de6a602f309aaedfe871131fa865e928c09cd571e6cf80154a40d"
 
       def install
         bin.install "taskeru"
@@ -29,15 +29,15 @@ class Taskeru < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.2/taskeru_linux_amd64.tar.gz"
-      sha256 "6f7314c476e2e47b44499ba89f7f210a749e76a7384a398f2f317e2508bee87c"
+      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.3/taskeru_linux_amd64.tar.gz"
+      sha256 "415532f6bc9a05834bfd6fefc3d63c5aaab708164aef40ff93cfd76a449d4dbd"
       def install
         bin.install "taskeru"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.2/taskeru_linux_arm64.tar.gz"
-      sha256 "6b6fd2f4ed700419d3f5de3a030f6f0cdcf8d8aac6367bd58d5c0cbf52d16e68"
+      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.3/taskeru_linux_arm64.tar.gz"
+      sha256 "21e1856a29a82a72efe48fe3ad8af5cfad256ed90291354c88a537ac5a878d55"
       def install
         bin.install "taskeru"
       end
