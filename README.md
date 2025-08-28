@@ -18,6 +18,13 @@ brew tap tokuhirom/tap
 brew install tokuhirom/tap/dcv
 ```
 
+### taskeru
+
+[taskeru](https://github.com/tokuhirom/taskeru) - Task management system.
+
+```bash
+brew install tokuhirom/tap/taskeru
+```
 
 ## Notes
 
