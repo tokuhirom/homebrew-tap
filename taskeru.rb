@@ -5,21 +5,21 @@
 class Taskeru < Formula
   desc "Taskeru - task management tool"
   homepage "https://github.com/tokuhirom/taskeru"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.3/taskeru_darwin_amd64.tar.gz"
-      sha256 "440ea421987c74d931e26330a0b7f4c18a9f0f6d7f6e906023c4d5d87de4b4eb"
+      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.4/taskeru_darwin_amd64.tar.gz"
+      sha256 "a85db7d1b8073209b5a28bd971c906b245e603080acc65c059c680ab6d8dfb62"
 
       def install
         bin.install "taskeru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.3/taskeru_darwin_arm64.tar.gz"
-      sha256 "519ef49d135de6a602f309aaedfe871131fa865e928c09cd571e6cf80154a40d"
+      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.4/taskeru_darwin_arm64.tar.gz"
+      sha256 "26f42b387ea72c81ec43ccde06195f49a34081b7991c97733fcf95af863cb274"
 
       def install
         bin.install "taskeru"
@@ -28,16 +28,16 @@ class Taskeru < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.3/taskeru_linux_amd64.tar.gz"
-      sha256 "415532f6bc9a05834bfd6fefc3d63c5aaab708164aef40ff93cfd76a449d4dbd"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.4/taskeru_linux_amd64.tar.gz"
+      sha256 "7aca8bb8d7a1243bf81e36a755151e739186f0279bd20692fa2d4b3413d5371b"
       def install
         bin.install "taskeru"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.3/taskeru_linux_arm64.tar.gz"
-      sha256 "21e1856a29a82a72efe48fe3ad8af5cfad256ed90291354c88a537ac5a878d55"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/tokuhirom/taskeru/releases/download/v0.0.4/taskeru_linux_arm64.tar.gz"
+      sha256 "82ac53779061e704e3b6740179311779520a6a91be1eea92a66abb10d7a6734c"
       def install
         bin.install "taskeru"
       end
