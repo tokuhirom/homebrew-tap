@@ -5,21 +5,21 @@
 class ApprunDedicatedApplicationProvisioner < Formula
   desc "CLI tool for managing Sakura Cloud AppRun Dedicated application provisioning"
   homepage "https://github.com/tokuhirom/apprun-dedicated-application-provisioner"
-  version "0.0.19"
+  version "0.0.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tokuhirom/apprun-dedicated-application-provisioner/releases/download/v0.0.19/apprun-dedicated-application-provisioner_0.0.19_darwin_amd64.tar.gz"
-      sha256 "030fc8d344af7fbe18a13996fc1c580577fecf7917fd1e67d44ac4d82e17f094"
+      url "https://github.com/tokuhirom/apprun-dedicated-application-provisioner/releases/download/v0.0.20/apprun-dedicated-application-provisioner_0.0.20_darwin_amd64.tar.gz"
+      sha256 "d7f3f3e1392c903efb2c4019e1e45e1d8ce0821f873a473b2b18af863c2734b7"
 
       def install
         bin.install "apprun-dedicated-application-provisioner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tokuhirom/apprun-dedicated-application-provisioner/releases/download/v0.0.19/apprun-dedicated-application-provisioner_0.0.19_darwin_arm64.tar.gz"
-      sha256 "73160e803898264e3993079b679e2a3750854dd493e8db8966371690f876c1d6"
+      url "https://github.com/tokuhirom/apprun-dedicated-application-provisioner/releases/download/v0.0.20/apprun-dedicated-application-provisioner_0.0.20_darwin_arm64.tar.gz"
+      sha256 "15ab5c9e0c99540eee3f637eaa4a70428d0ae6e9c0706d9d22014471198be3a5"
 
       def install
         bin.install "apprun-dedicated-application-provisioner"
@@ -29,15 +29,15 @@ class ApprunDedicatedApplicationProvisioner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/apprun-dedicated-application-provisioner/releases/download/v0.0.19/apprun-dedicated-application-provisioner_0.0.19_linux_amd64.tar.gz"
-      sha256 "ffcfd97e356ebb987711b2ed23572ed96c1ce400d11e362f58f8eb405423ff1e"
+      url "https://github.com/tokuhirom/apprun-dedicated-application-provisioner/releases/download/v0.0.20/apprun-dedicated-application-provisioner_0.0.20_linux_amd64.tar.gz"
+      sha256 "a547ce21b4cc60b4db7e14ec176cda5eba98ce3e7f1577c61fc55b8b33d47a61"
       def install
         bin.install "apprun-dedicated-application-provisioner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/apprun-dedicated-application-provisioner/releases/download/v0.0.19/apprun-dedicated-application-provisioner_0.0.19_linux_arm64.tar.gz"
-      sha256 "98fedde79e7c7c0cd6170a159384d5e3ced388f9856e84f4849990246fa8e0ff"
+      url "https://github.com/tokuhirom/apprun-dedicated-application-provisioner/releases/download/v0.0.20/apprun-dedicated-application-provisioner_0.0.20_linux_arm64.tar.gz"
+      sha256 "c3f757a37cf4bd1f93bbec01d822fc518d6e1505ae613a6490777da28e48f1c0"
       def install
         bin.install "apprun-dedicated-application-provisioner"
       end
