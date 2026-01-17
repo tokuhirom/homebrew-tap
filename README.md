@@ -44,6 +44,14 @@ brew install tokuhirom/tap/taskeru
 brew install --cask tokuhirom/tap/notebeam
 ```
 
+### SakPilot
+
+[SakPilot](https://github.com/tokuhirom/sakpilot) - Desktop client for Sakura Cloud.
+
+```bash
+brew install --cask tokuhirom/tap/sakpilot
+```
+
 ## Notes
 
 - Formula files are automatically managed by GoReleaser
