@@ -1,8 +1,8 @@
 cask "notebeam" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.0.11"
-  sha256 arm: "e962ed5ee6a0d5b7285597df6fb54023cb2b4b5ff85f7a2a5587c9870fc4a0e1", intel: "fe6df8f79c9b6476da25956dc37b43e797dae6e172495776e58b6788d58131fc"
+  version "0.0.12"
+  sha256 arm: "c8cfab6bc2cd7c9962be91cdd781c95d21bfe8276931035e230cfd8f61b55796", intel: "d839aaf3e1b7203d12a0167f4ef24494d107ef07154b73c1e71c6d22065e85c0"
 
   url "https://github.com/tokuhirom/NoteBeam/releases/download/v#{version}/NoteBeam_v#{version}_darwin_#{arch}.zip"
   name "NoteBeam"
