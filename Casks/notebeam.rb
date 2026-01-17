@@ -1,9 +1,8 @@
 cask "notebeam" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.0.6"
-  sha256 arm:   "",
-         intel: "4d66221619ff4ac62b5381a84e516b43a2131f04f74d6582fbf015c1502f9667"
+  version "0.0.10"
+  sha256 arm: "55e24a226ee2800e87165a08d31cf2d8493c3c63d0ae480b17e5d9d05d871579", intel: "23f01c1c75d5bdc0382fbb310d592148d129427045c0d6aec88913fefc8367b5"
 
   url "https://github.com/tokuhirom/NoteBeam/releases/download/v#{version}/NoteBeam_v#{version}_darwin_#{arch}.zip"
   name "NoteBeam"
@@ -12,7 +11,5 @@ cask "notebeam" do
 
   app "NoteBeam.app"
 
-  zap trash: [
-    "~/Documents/NoteBeam",
-  ]
+  zap trash: "~/Documents/NoteBeam"
 end
