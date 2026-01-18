@@ -1,10 +1,10 @@
 cask "notebeam" do
-  version "0.0.18"
-  sha256 "de28b923e105d524f105292c50551f1bd27d9367d0b29c82d195e14b947d466b"
+  version "0.0.19"
+  sha256 "81e472e3e63bcaceecd35a1ebb137262a965dd9dfba5cc8b814b5eae2fab35c5"
 
   url "https://github.com/tokuhirom/NoteBeam/releases/download/v#{version}/NoteBeam_v#{version}_darwin_universal.zip"
   name "NoteBeam"
-  desc "Simple memo app for Mac"
+  desc "Simple memo app"
   homepage "https://github.com/tokuhirom/NoteBeam"
 
   app "NoteBeam.app"
