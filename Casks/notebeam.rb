@@ -1,6 +1,6 @@
 cask "notebeam" do
-  version "0.0.17"
-  sha256 "ff2f5866c78ceed24f57871d33d560528372a31471d408a8b0fc23a29af3f6c5"
+  version "0.0.18"
+  sha256 "de28b923e105d524f105292c50551f1bd27d9367d0b29c82d195e14b947d466b"
 
   url "https://github.com/tokuhirom/NoteBeam/releases/download/v#{version}/NoteBeam_v#{version}_darwin_universal.zip"
   name "NoteBeam"
