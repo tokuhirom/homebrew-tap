@@ -1,6 +1,6 @@
 cask "sakpilot" do
-  version "0.0.8"
-  sha256 "4cb0c24d5f320b15683cd569d41dec74ae64cfef459e5f5fa31ac15534f904b4"
+  version "0.0.9"
+  sha256 "044b2911dffc1a1fd9e07f8690df83fdb6d7935fe2e1059fc0050f4a491ba4ce"
 
   url "https://github.com/tokuhirom/sakpilot/releases/download/v#{version}/SakPilot-darwin-universal.zip"
   name "SakPilot"
