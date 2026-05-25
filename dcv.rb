@@ -5,23 +5,23 @@
 class Dcv < Formula
   desc "Docker Compose Viewer - A TUI tool for monitoring Docker Compose applications"
   homepage "https://github.com/tokuhirom/dcv"
-  version "0.3.2"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tokuhirom/dcv/releases/download/v0.3.2/dcv_darwin_amd64.tar.gz"
-      sha256 "786aaa9738f96548ea2d0d54052965cdd91e4a5b58b3e2b07ade26264be8f4f1"
+      url "https://github.com/tokuhirom/dcv/releases/download/v0.4.0/dcv_darwin_amd64.tar.gz"
+      sha256 "4d5ea8bd1284ee387aa366a0bcaad35a4fcd6485327d0c2b9c210d1ac66b2b7a"
 
-      def install
+      define_method(:install) do
         bin.install "dcv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tokuhirom/dcv/releases/download/v0.3.2/dcv_darwin_arm64.tar.gz"
-      sha256 "174d708aab4ae41d520e7eb340ae18510f1ba15e4b839c7df6a6a6ed7db54652"
+      url "https://github.com/tokuhirom/dcv/releases/download/v0.4.0/dcv_darwin_arm64.tar.gz"
+      sha256 "9b0b17299db089e76a7ed2945506161991859c15f9bb5d311457f8772ad964a1"
 
-      def install
+      define_method(:install) do
         bin.install "dcv"
       end
     end
@@ -29,16 +29,16 @@ class Dcv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/dcv/releases/download/v0.3.2/dcv_linux_amd64.tar.gz"
-      sha256 "e0795b6b8d11eb03e8f71b0ba23467e2418f30f5956f426bbfd8643ec80f48bb"
-      def install
+      url "https://github.com/tokuhirom/dcv/releases/download/v0.4.0/dcv_linux_amd64.tar.gz"
+      sha256 "f06fda3405064ea444a27d9d8757bfcce39f56ebef0179c9a02f542c1e654a96"
+      define_method(:install) do
         bin.install "dcv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tokuhirom/dcv/releases/download/v0.3.2/dcv_linux_arm64.tar.gz"
-      sha256 "c4da14cb8442f23cf1feadcc65e27b31fa9199efae866882a8c228d4913519d9"
-      def install
+      url "https://github.com/tokuhirom/dcv/releases/download/v0.4.0/dcv_linux_arm64.tar.gz"
+      sha256 "f6b96b3c6e634b4a3034db3b2a8b8c2ccba5ed161f85602bebb4571fedd8075d"
+      define_method(:install) do
         bin.install "dcv"
       end
     end
